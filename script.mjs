@@ -1,4 +1,3 @@
-// Menu data structure
 const menuLinks = [
   {text:'about', href:'/about'},
   {text:'catalog',href: '#',subLinks: [
@@ -47,10 +46,10 @@ subMenuEl.classList.add('flex-around');
 subMenuEl.style.position = 'absolute';
 subMenuEl.style.top = '0';
 
-// Select and cache the all of the <a> elements inside of topMenuEl in a variable named topMenuLinks.
+//select and cache the all of the <a> elements inside of topMenuEl in a variable named topMenuLinks.
 const topMenuLinks = topMenuEl.querySelectorAll('a');
 
-// Attach a delegated 'click' event listener to topMenuEl. Prevent default link behavior
+//attach a delegated 'click' event listener to topMenuEl. Prevent default link behavior
 topMenuEl.addEventListener('click', function (event) {
   event.preventDefault(); 
 
